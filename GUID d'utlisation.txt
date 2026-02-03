@@ -1,0 +1,22 @@
+1- les outils à installer 
+     VS code 
+     xampp 
+
+2-Télécharger ApplicationWeb_main.zip
+3-Extraire le dossier ApplicationWeb_main
+4-lancer Xampp phpMyadmin
+5-céer une nouvelle base de donné nommé cfpa_db
+6-Importer le fichier cfpa_db.sql 
+7-changer le nom de ficher .env.exemple vers .env qui se trouve dans le dossier server
+8-ouvrer le cmd dans le dosier server 
+9-excuter la commande npm install 
+10-éxcuter la commande npm run dev
+11-lancer VS code 
+12-Installer l'extention live server 
+13-ouvrer le ficher indxe.html
+14-cliquer droit choisir Open with live server
+
+---
+Admin
+email :Admin_abc@gmail.com
+mot de passe :admin@2025
