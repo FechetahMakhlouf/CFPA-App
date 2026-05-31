@@ -1216,14 +1216,14 @@ Creates a new notification.
 
 ```json
 {
-    "id": 1,
-    "utilisateurId": 1,
-    "type": "course",
-    "titre": "Nouveau cours disponible",
-    "message": "Un nouveau cours de mathématiques est disponible.",
-    "lu": false,
-    "cree_a": "2025-08-06T10:00:00.000Z",
-    "mis_a_jour_a": "2025-08-06T10:00:00.000Z"
+  "id": 1,
+  "utilisateurId": 1,
+  "type": "course",
+  "titre": "Nouveau cours disponible",
+  "message": "Un nouveau cours de mathématiques est disponible.",
+  "lu": false,
+  "cree_a": "2025-08-06T10:00:00.000Z",
+  "mis_a_jour_a": "2025-08-06T10:00:00.000Z"
 }
 ```
 
@@ -1243,16 +1243,16 @@ Retrieves all notifications for a specific user.
 
 ```json
 [
-    {
-        "id": 1,
-        "utilisateurId": 1,
-        "type": "course",
-        "titre": "Nouveau cours disponible",
-        "message": "Un nouveau cours de mathématiques est disponible.",
-        "lu": false,
-        "cree_a": "2025-08-06T10:00:00.000Z",
-        "mis_a_jour_a": "2025-08-06T10:00:00.000Z"
-    }
+  {
+    "id": 1,
+    "utilisateurId": 1,
+    "type": "course",
+    "titre": "Nouveau cours disponible",
+    "message": "Un nouveau cours de mathématiques est disponible.",
+    "lu": false,
+    "cree_a": "2025-08-06T10:00:00.000Z",
+    "mis_a_jour_a": "2025-08-06T10:00:00.000Z"
+  }
 ]
 ```
 
@@ -1272,14 +1272,14 @@ Marks a notification as read.
 
 ```json
 {
-    "id": 1,
-    "utilisateurId": 1,
-    "type": "course",
-    "titre": "Nouveau cours disponible",
-    "message": "Un nouveau cours de mathématiques est disponible.",
-    "lu": true,
-    "cree_a": "2025-08-06T10:00:00.000Z",
-    "mis_a_jour_a": "2025-08-06T10:00:00.000Z"
+  "id": 1,
+  "utilisateurId": 1,
+  "type": "course",
+  "titre": "Nouveau cours disponible",
+  "message": "Un nouveau cours de mathématiques est disponible.",
+  "lu": true,
+  "cree_a": "2025-08-06T10:00:00.000Z",
+  "mis_a_jour_a": "2025-08-06T10:00:00.000Z"
 }
 ```
 
@@ -1312,6 +1312,7 @@ Deletes a notification.
   "message": "Notification not found"
 }
 ```
+
 ## Utilisateur-Groupes Routes (Associations stagiaires/enseignants ↔ groupes)
 
 ### `POST /api/utilisateur-groupes` (Admin Only)
@@ -1319,6 +1320,7 @@ Deletes a notification.
 Crée une nouvelle association entre un utilisateur (stagiaire/enseignant) et un groupe.
 
 **Header:**
+
 ```json
 { "x-access-token": "your-jwt-token" }
 Body:
@@ -1427,3 +1429,4 @@ Response (200):
 json
 Copier le code
 { "message": "Association supprimée avec succès" }
+```

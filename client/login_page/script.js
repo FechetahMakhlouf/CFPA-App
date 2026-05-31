@@ -49,7 +49,7 @@ document
   .getElementById("register-password")
   .addEventListener("input", function () {
     const confirmPassword = document.getElementById(
-      "register-confirm-password"
+      "register-confirm-password",
     );
     if (confirmPassword.value) {
       confirmPassword.dispatchEvent(new Event("input"));
@@ -143,8 +143,8 @@ document
         mot_de_passe: password,
         roles: [roleMapping[role]],
         informations_supplementaires: JSON.stringify({
-          matricule: matricule
-        })
+          matricule: matricule,
+        }),
       };
 
       const result = await apiRequest(`${API_BASE_URL}/auth/signup`, {
@@ -193,7 +193,7 @@ document
           nom: result.nom,
           email: result.email,
           roles: result.roles,
-        })
+        }),
       );
 
       const userRole = result.roles[0];
